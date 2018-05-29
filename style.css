@@ -1,0 +1,167 @@
+
+*{
+  box-sizing: border-box;
+  margin: 5px;
+  
+}
+body,html{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 98vh;
+  margin:0px;
+  padding:0px;
+}
+main{
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+}
+.view{
+  min-height: 600px;
+  width: 450px;
+  display:flex;
+  flex-flow: column nowrap;
+  box-shadow: 0 5px 10px rgba(0,0,0,.4);
+}
+.buttons-block{
+  display: flex;
+  align-items: center;
+  
+}
+.about{
+  margin-left: auto;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button{
+  width: 100px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+button:hover{
+  background-color: rgb(68, 67, 67, 0.35);
+}
+.maintable{
+  
+  background-color: #fff;
+  width: auto;
+  min-height: 600px;
+}
+header{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-size: 6vh;
+  font-family: Arial;
+  margin-right: auto;
+}
+.username{
+  font-size: 2.4vh;
+  
+}
+footer{
+  margin-top: auto;
+}
+
+.exit{
+  
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all .9s ease;
+}
+.exit:hover{
+  background-color:red;
+}
+.exit>img{
+  height: 4vh;
+}
+
+.cell{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: 1px solid;
+}
+.cell div{
+  margin:0;
+}
+.close-tab{
+  margin-left: auto;
+}
+.phoneInfo{
+  flex-grow: 2;
+}
+
+.add-phone{
+  display: none;
+  position: absolute;
+  top: 20vh;
+  outline: 1px solid;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(250, 247, 247);
+  min-width: 400px;
+  min-height: 400px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.4);
+  z-index:999;
+  transition: all .9s ease;
+}
+
+.close-popup{
+  position: absolute;
+  align-self: flex-end;
+  padding-right: 5px;
+  transition: transform .5s ease-in-out;
+  cursor: pointer;
+}
+.close-popup:hover{
+  transform: rotateZ(360deg);
+}
+
+.blurit{
+  width: 100vw;
+  height: 100vh;
+  background-color:  rgba(0,0,0,.5);
+  position: absolute;
+  z-index: 888;
+  margin:0px;
+  padding:0px;
+  display: none;
+  transition: all .2s ease;
+}
+.isChanging{
+  display: none;
+}
+.hidy{
+  display: flex;
+}
+input[type=button]{
+  cursor: pointer;
+}
+#phone1ex{
+  display:none;
+}
+
+.edit-tab, .close-tab, .to-progress{
+  padding: 0px;
+  margin: 5px;
+  
+  width: 22px;
+  height: 22px;
+  border: 0;
+  background-color: #fff;
+  transition: none;
+}
+.isChanging img{
+  margin: 0px;
+}

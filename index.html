@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Service Center v0.1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class=header>
+    <div class=logo>SERVICE CENTRE v0.1</div>
+    <div class="username"><b>Administrator</b></div>
+    <div onclick=window.close() class=exit><img src="power-button-off.svg"></div>
+</header>
+  <main>
+    <section class="new view">
+      <div class=buttons-block>
+        <button class=add-button>
+          Добавить
+        </button>
+        <button class=delete-button>
+          Изменить
+        </button>
+        <p class="about">Новые</p>
+      </div>
+      <div class=maintable>
+        <div id=phone1ex class="cell">
+          <p class=phoneNum>1</p>
+          <p class=phoneInfo>Samsung Galaxy S4 / Экран</p>
+          <div class=isChanging>
+            <button class=edit-tab><img  width=20px src=edit.svg ></button>
+            <button class=close-tab ><img src="remove.svg" width=20px alt="x"></button>
+            <button class=to-progress ><img src="next.svg" width=20px alt="->"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="in-progress view">
+      <div class=buttons-block>
+        
+        <button class=delete-button>
+          Изменить
+        </button>
+        <p class="about">В работе</p>
+      </div>
+      <div class=maintable>
+
+      </div>
+    </section>
+    <section class="ready view">
+        <div class=buttons-block>
+          
+          <button class=delete-button>
+          Изменить
+          </button>
+          <p class="about">Готовые</p>
+        </div>
+        <div class=maintable>
+  
+        </div>
+      </section>
+  </main>
+
+  <div class=add-phone>
+      <img src=remove.svg width=30px; class=close-popup alt=x></input>
+    <div>
+      
+      <label for=""><p>Модель телефона</p><input id=model type="text"></label>
+      <label for=""><p>Неисправность</p><input id=problem type="text"></label>
+      <label for=""><p>Состояние</p><input id=status type="text"></label>
+      <label for=""><p>IMEI</p><input id=imei type="number"></label>
+      <br>
+      
+    </div>
+    <button id=sendNewPhoneInfo>Добавить</button>
+  </div>
+  <div class='editpopup add-phone'>
+    <img src=remove.svg width=30px; class=' editclose close-popup' alt=x></input>
+  <div>
+    
+    <label for=""><p>Модель телефона</p><input id=editmodel type="text"></label>
+    <label for=""><p>Неисправность</p><input id=editproblem type="text"></label>
+    <label for=""><p>Состояние</p><input id=editstatus type="text"></label>
+    <label for=""><p>IMEI</p><input id=editimei type="number"></label>
+    <br>
+    
+  </div>
+    <button id=editPhoneInfo>Добавить</button>
+  </div>
+<footer>
+  Егор Сидоров, 2018
+</footer>
+<div class=blurit></div>
+  <script src=script.js></script>
+</body>
+</html>
