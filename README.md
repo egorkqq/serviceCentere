@@ -1,6 +1,7 @@
 # serviceCentere
-My course project
-Tech stack: vanilla JS, vanilla CSS, HTML.
-Also, for this was used localStorage (for phone cells rendering and storage) 
+Немного об этом проeкте: это было моей курсовой работой на первом курсе университета. Сейчас, конечно, я бы так писать не стал, и считаю это код, а особенно структуру проекта плохими.
+Но тем не менее, хочу оставить его здесь, как напоминание себе о прошлом :)
 
-Let's try: egorkqq.github.io/serviceCentre
+Написано на самом простом джаваскрипте с использованием пары фич ES2015 и localStorage.
+
+Потыкать можно тут (но лучше не стоит): egorkqq.github.io/serviceCentre
